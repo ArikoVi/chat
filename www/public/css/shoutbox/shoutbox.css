@@ -1,0 +1,213 @@
+.shoutbox {
+    height: calc(100% - 100px - 76px);
+    min-width: 420px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-shadow: 0.5em 0.9em 50px rgba(30,30,30,0.5);
+}
+
+@media (min-width: 1150px) {
+  .shoutbox {width: 1150px;}
+}
+
+@media (max-width: 1150px) {
+  .shoutbox {width: 100%;}
+}
+
+h1 {
+    background-color:  #87bfef;
+    box-shadow: 0px 1px 1px 0.00px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    height: 46px;
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+h1 .img-refresh {
+    position: absolute;
+    top: 8px;
+    right: 75px;
+    width: 30px;
+    height: 30px;
+    float:right;
+    cursor: pointer;
+}
+
+.shoutbox-form form {
+    background-color:  #f9fafb;
+    max-width: 100%;
+    height: 50px;
+    text-align: left;
+}
+
+.shoutbox-form form #shoutbox-comment {
+    float: left;
+    background-color: #ffffff;
+    outline: none;
+    width: calc(100% - 110px);
+    height: 50px;
+    resize: none;
+    font-weight: normal;
+    font: inherit;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    color:inherit;
+}
+
+.shoutbox-form form input[type=submit] {
+    background-color: #87bfef;
+    border: 1px solid #72a0c7;
+    width: 110px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+
+.shoutbox-form form input[type=submit]:hover {
+    background-color: #72a0c7;
+}
+
+/**/
+
+.shoutbox-content {
+    width: 100%;
+    height: calc(100% - 50px - 46px);
+    margin: 0;
+    padding: 0;
+    color:  #df377a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    overflow-y: scroll;
+    transform: scaleY(-1);
+}
+
+.shoutbox-rooms {
+    width: 100%;
+    height: calc(100% - 46px);
+    margin: 0;
+    padding: 0;
+    color:  #df377a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.shoutbox-rooms .img-delete, .shoutbox-content .img-delete {
+    float: left;
+    width: 32px;
+    height: 32px;
+}
+
+.shoutbox-content li, .shoutbox-rooms li {
+    padding: 20px;
+    border-bottom: 1px solid #d5dbe1;
+}
+
+.shoutbox-content li {
+    transform: scaleY(-1);
+}
+
+.shoutbox-rooms li:hover {
+    background-color: #d5dbe14a;
+    cursor: pointer;
+}
+
+.shoutbox-rooms .li-no-clicable {
+    padding: 0px;
+}
+
+.shoutbox-rooms .li-no-clicable:hover {
+    background-color: white;
+    cursor: auto;
+}
+
+.shoutbox-rooms li h1 {
+    width: calc(100% - 40px);
+    margin: 10px;
+}
+
+.shoutbox-avatar {
+    float: left;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.shoutbox-div {
+    margin-left: 62px;
+}
+
+.shoutbox-username, .shoutbox-title {
+    display: inline;
+    color:  #df377a;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 5px;
+}
+
+.shoutbox-comment {
+    display: inline;
+    color:  #717c87;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.shoutbox-description {
+    color:  #717c87;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+.shoutbox-comment-details {
+    width: 100%;
+    margin: 5px auto;
+    height: 11px;
+}
+
+.shoutbox-comment-reply {
+    display: inline-block;
+    float: left;
+    color:  #5896cb;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: left;
+    height: 9px;
+    cursor: pointer;
+}
+
+.shoutbox-comment-ago {
+    display: inline-block;
+    float: right;
+    color:  #9aa1a7;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: right;
+    height: 11px;
+}

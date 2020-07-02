@@ -1,0 +1,100 @@
+.admin {
+    height: calc(100% - 100px - 76px);
+    min-width: 420px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    box-shadow: 0.5em 0.9em 50px rgba(30,30,30,0.5);
+    overflow-y: scroll;
+}
+
+@media (min-width: 1150px) {
+  .admin {width: 1150px;}
+}
+
+@media (max-width: 1150px) {
+  .admin {width: 100%;}
+}
+
+.admin h1 {
+    background-color:  #87bfef;
+    box-shadow: 0px 1px 1px 0.00px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    height: 46px;
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+.admin-content {
+    padding: 20px;
+}
+
+.admin-content label {
+    display: inline-block;
+    color:  #df377a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    width: 180px;
+    height: 11px;
+    line-height: 11px;
+    margin-bottom: 15px;
+}
+
+.admin-content input[type=text], .admin-content input[type=number], .admin-content textarea {
+    background-color: #ffffff;
+    box-shadow: 1px 3px 0px 0.00px rgba(0, 0, 0, 0.04);
+    border: 1px solid #bfcdda;
+    outline: none;
+    max-width: 500px;
+    width: 500px;
+    min-height: 41px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    color:inherit;
+}
+
+.admin-content .message {
+    color: red;
+    font-size: 11px;
+    margin-bottom: 2px;
+    height: 12px;
+    margin-left: 183px;
+}
+
+.admin-content .label-checkbox {
+    -moz-user-select: none; /* Mozilla Firefox */
+    -ms-user-select: none; /* Internet Explorer (не поддерживается) */
+    -o-user-select: none; /* Opera Presto (не поддерживается) */
+    -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.admin-content input[type=submit] {
+    background-color: #87bfef;
+    border: 1px solid #72a0c7;
+    width: 100px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    outline: none;
+    cursor: pointer;
+}
+
+.admin-content input[type=submit]:hover {
+    background-color: #72a0c7;
+}

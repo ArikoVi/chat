@@ -1,0 +1,141 @@
+.login {
+    width: 480px;
+    min-width: 420px;
+    height: 249px;
+    overflow: hidden;
+    box-shadow: 0.5em 0.9em 50px rgba(30,30,30,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color:  #87bfef;
+}
+
+@media (max-width: 480px) {
+  .login {width: 100%;}
+
+  .login-form #login-name, #login-email, #login-password, #login-password-repeat {width: 60%;}
+}
+
+@media (min-width: 480px) {
+  .login-form #login-name, #login-email, #login-password, #login-password-repeat {width: 100%;}
+}
+
+h1 {
+    background-color:  #87bfef;
+    box-shadow: 0px 1px 1px 0.00px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: relative;
+    height: 46px;
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+h1 .img-exit {
+    position: absolute;
+    top: 8px;
+    right: 35px;
+    width: 30px;
+    height: 30px;
+    float:right;
+    cursor: pointer;
+}
+
+.login-form {
+    background-color:  #f9fafb;
+    max-width: 100%;
+    text-align: left;
+    padding: 20px;
+}
+
+.login-form label {
+    display: inline-block;
+    color:  #df377a;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    width: 80px;
+    height: 11px;
+    line-height: 11px;
+    margin-bottom: 15px;
+}
+
+.login-form .login-password-label {
+    position: relative;
+}
+
+.login-form #login-name, #login-email, #login-password, #login-password-repeat {
+    background-color: #ffffff;
+    box-shadow: 1px 3px 0px 0.00px rgba(0, 0, 0, 0.04);
+    border: 1px solid #bfcdda;
+    outline: none;
+    max-width: 260px;
+    height: 41px;
+    font-size: 14px;
+    margin-bottom: 2px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    color:inherit;
+}
+
+.login-form .message {
+    color: red;
+    font-size: 11px;
+    margin-bottom: 2px;
+    height: 12px;
+    margin-left: 83px;
+}
+
+.login-form input[type=submit], .login-form a {
+    background-color: #87bfef;
+    border: 1px solid #e6e7e8;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.1);
+    width: 110px;
+    height: 41px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-form input[type=submit]:hover, .login-form a:hover {
+    background-color: #72a0c7;
+}
+
+.login-form #btn-div {
+    margin-top: 10px;
+    height: 41px;
+}
+
+.login-form #signin {
+    float: left;
+    margin-left: 83px;
+}
+
+.login-form #registr {
+    float: right;
+    margin-right: 83px;
+}
+
+@media (max-width: 435px) {
+    .login-form #signin {
+        float: left;
+        margin-left: 30px;
+    }
+
+    .login-form #registr {
+        float: right;
+        margin-right: 30px;
+    }
+}
